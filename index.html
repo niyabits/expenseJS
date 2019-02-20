@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Expenses</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="center">
+        <a href="#"><h3>Expenses App</h3></a>
+        <strong>
+          <span id="right">
+            <a href="#" id="settings"><i class="fas fa-cog"></i></a>
+            Total Balance&nbsp;&nbsp; : &nbsp;&nbsp; &#8377;
+            <span id="total-bal">0</span>
+          </span>
+        </strong>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="settings">
+        <form id="add-bal-form">
+          <div id="add-bal" class="input">
+            <label for="bal">Add Balance</label><br />
+            <input
+              type="number"
+              name="bal"
+              id="add-bal-i"
+              placeholder="Balance"
+            /><br />
+            <input
+              type="submit"
+              value="Add Balance"
+              class="btn"
+              id="add-bal-btn"
+            />
+          </div>
+        </form>
+      </div>
+
+      <form id="item-form">
+        <!-- Add Items -->
+        <div id="add" class="input">
+          <label for="item">Item Name</label>
+          <input
+            type="text"
+            name="item"
+            id="item"
+            placeholder="Item Name"
+          /><br />
+          <label for="item">Cost</label>
+          <input
+            type="number"
+            name="cost"
+            id="cost"
+            placeholder="Cost"
+          /><br /><br />
+          <input type="submit" value="Add Item" class="btn" id="add-item-btn" />
+        </div>
+      </form>
+
+      <br /><br />
+      <hr color="#ccc" />
+
+      <table cellspacing="60px">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Cost</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
