@@ -47,7 +47,7 @@ function appendItem(e) {
   <tr>
     <td>${itemInput.value}</td>
     <td>${costInput.value}</td>
-    <td>${date}</td>
+    <td>${date.toLocaleDateString()}</td>
   </tr>
   `);
 
